@@ -1,19 +1,18 @@
 <!DOCTYPE>
 <html lang="pt_BR">
   <head>
+    <meta name="scale" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Um site de teste</title>
+    <title>Teste</title>
   </head>
   <body>
-    <h1>Eai</h1>
-    <p>Você tá bom?</p>
-    <p id="texto"></p>
-    <button onclick="texto()">Responder</button>
-    <script type="javascript">
-      function texto() {
-        document.getElementById("texto").innerHTML = "Eu tô bom mesmo"
-      }
-    </script>
+    <h1>Eai bom?</h1>
+    <button onclick="responder()">Responder</button>
+    <span id="replace"></span>
   </body>
+  <script>
+    function responder() {
+      document.getElementById("replace").innerHTML = "Bom mesmo!"
+    };
+  </script>
 </html>
